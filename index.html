@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Effect Lab — AI Video Generator from Text &amp; Images</title>
+<meta name="description" content="Build a scene from words, animate a photograph, or use an effect prompt as a starting point. AI video generator.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:#0b0a12;color:#f0ebf7;line-height:1.6}
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;justify-content:center;text-align:center;overflow:hidden}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(11,10,18,.96) 8%,rgba(11,10,18,.35) 55%,rgba(11,10,18,.55))}
+.hero-inner{position:relative;z-index:1;padding:64px 24px;max-width:760px}
+.kicker{letter-spacing:.28em;text-transform:uppercase;font-size:12px;color:#b79ced;margin-bottom:16px}
+h1{font-size:clamp(34px,6vw,58px);line-height:1.15;margin-bottom:16px}
+.sub{font-size:18px;color:#d5cbe4;margin-bottom:32px}
+.btn{display:inline-block;background:#b79ced;color:#16121f;font-weight:700;font-size:17px;padding:15px 42px;border-radius:999px;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:#b79ced;border:2px solid #b79ced;margin-left:12px}
+section{max-width:900px;margin:0 auto;padding:72px 24px}
+h2{font-size:30px;margin-bottom:12px}
+.lead{color:#a89cb8;margin-bottom:36px;font-size:17px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.step{background:#151222;border:1px solid #2b2340;border-radius:14px;padding:28px 24px}
+.step .n{font-size:13px;color:#b79ced;letter-spacing:.2em;margin-bottom:8px}
+.step h3{font-size:18px;margin-bottom:8px}
+.step p{font-size:15px;color:#a89cb8}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.feat{background:#151222;border:1px solid #2b2340;border-radius:14px;padding:28px 24px}
+.feat h3{font-size:18px;margin-bottom:8px}
+.feat p{font-size:15px;color:#a89cb8}
+.demos{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.demo{background:#151222;border:1px solid #2b2340;border-radius:14px;padding:24px}
+.demo a{color:#b79ced;font-weight:600;text-decoration:none}
+footer{border-top:1px solid #2b2340;padding:40px 24px;text-align:center;color:#7d7191;font-size:13px;max-width:900px;margin:0 auto}
+footer a{color:#b79ced}
+</style>
+</head>
+<body>
+<div class="hero">
+<img class="bg" src="assets/hero-poster.jpg" alt="AI Effect Lab hero">
+<div class="hero-inner">
+<div class="kicker">AI Video Generator</div>
+<h1>Choose how your video begins.</h1>
+<p class="sub">Build a scene from words, animate a photograph, or use an effect prompt as a starting point. No timeline. No keyframes.</p>
+<a class="btn" href="https://aieffectlab.com">Start creating</a>
+<a class="btn ghost" href="https://aieffectlab.com">Explore effects</a>
+</div>
+</div>
+
+<section>
+<h2>One lab, many effects</h2>
+<p class="lead">Every effect page explains the input, the workflow, and what to check in your result.</p>
+<div class="feats">
+<div class="feat"><h3>Text &amp; image to video</h3><p>Describe a scene in words or animate a photo — start with a short clear shot, then iterate one detail at a time.</p></div>
+<div class="feat"><h3>Editable effect prompts</h3><p>Zombie couple, flying car stunt, party edit, street freestyle, dance challenges, flood, orbit, explosion and more.</p></div>
+<div class="feat"><h3>Two models, one workspace</h3><p>Seedance 2.5 and MiniMax H3 side by side. Inputs, durations and resolutions depend on the model you pick.</p></div>
+<div class="feat"><h3>Know the cost first</h3><p>Credit cost is shown before you submit. Provider-confirmed failures return reserved credits.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Three simple steps</h2>
+<p class="lead">Pay-as-you-go credits · browsing and prompt editing are free</p>
+<div class="steps">
+<div class="step"><div class="n">01</div><h3>Describe one clear shot</h3><p>Name the subject, action, setting and camera movement — or start from an effect prompt.</p></div>
+<div class="step"><div class="n">02</div><h3>Choose inputs and settings</h3><p>Add reference media when needed. Pick a model, duration and resolution, then review the credit cost.</p></div>
+<div class="step"><div class="n">03</div><h3>Review and keep it</h3><p>Inspect movement, faces and continuity. Download the result or find it in My creations.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Watch the showcase</h2>
+<p class="lead">Example clips supplied with the site — your inputs and results will differ.</p>
+<div class="demos">
+<div class="demo"><a href="https://aieffectlab.com/videos/showcase/generated/monster-bakery.mp4">▶ Midnight Monster Bakery</a><p style="color:#7d7191;font-size:14px;margin-top:8px">Showcase example</p></div>
+<div class="demo"><a href="https://aieffectlab.com/videos/showcase/generated/glacier-titan.mp4">▶ The Glacier Titan</a><p style="color:#7d7191;font-size:14px;margin-top:8px">Showcase example</p></div>
+<div class="demo"><a href="https://aieffectlab.com/videos/showcase/generated/paper-dragon.mp4">▶ Paper Dragon Awakens</a><p style="color:#7d7191;font-size:14px;margin-top:8px">Showcase example</p></div>
+</div>
+</section>
+
+<footer>
+<p>A small lab for bigger ideas. <a href="https://aieffectlab.com">aieffectlab.com</a></p>
+<p style="margin-top:12px">Independent AI video fan tool. Upload only photos you have the rights to. Concept artwork illustrates the idea — AI results can vary. Site © lynsea.</p>
+</footer>
+</body>
+</html>
